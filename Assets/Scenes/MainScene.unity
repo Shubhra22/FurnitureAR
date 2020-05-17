@@ -251,7 +251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 680ec4e2c11674ca5a87e5a1e93d7e71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  furniture: {fileID: 501869003066672871, guid: 17bfe761f8cf1441a80cb21cc1a81fd5,
+  furniture: {fileID: 7887528235732700347, guid: 4e9fb2cde7b0d41a7aa4bb92ca613ec9,
     type: 3}
 --- !u!114 &185861315
 MonoBehaviour:
@@ -914,7 +914,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3816ca5801b9c4e6aa413d329c100c3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  furniture: {fileID: 2830851743021514504, guid: ddc73634610c9479691f1508aed381fc,
+  furniture: {fileID: 8852102700976438539, guid: 126b221ab80f642bb81fc5a3c2621797,
     type: 3}
 --- !u!4 &1457325658
 Transform:
@@ -928,7 +928,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1499666212
 GameObject:
@@ -1085,7 +1085,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 680ec4e2c11674ca5a87e5a1e93d7e71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  furniture: {fileID: 2830851743021514504, guid: ddc73634610c9479691f1508aed381fc,
+  furniture: {fileID: 8852102700976438539, guid: 126b221ab80f642bb81fc5a3c2621797,
     type: 3}
 --- !u!114 &1533113430
 MonoBehaviour:
@@ -1464,7 +1464,7 @@ RectTransform:
   m_Children:
   - {fileID: 1499666213}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
