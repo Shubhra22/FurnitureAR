@@ -8,6 +8,7 @@
           <e p="ButtonManager.cs" t="Include" />
           <e p="DataHandler.cs" t="Include" />
           <e p="InputManager.cs" t="Include" />
+          <e p="UIManager.cs" t="Include" />
         </e>
       </e>
       <e p="IKEA AR.sln" t="IncludeFlat" />
