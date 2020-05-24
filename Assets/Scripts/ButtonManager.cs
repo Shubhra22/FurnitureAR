@@ -8,6 +8,8 @@ public class ButtonManager : MonoBehaviour
     private Button btn;
 
     public GameObject furniture;
+    
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +20,14 @@ public class ButtonManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (UIManager.Instance.OnEntered(gameObject))
+        {
+            transform.localScale = Vector3.one * 2;
+        }
+        else
+        {
+            transform.localScale = Vector3.one;
+        }
     }
 
     void SelectObject()
