@@ -16,7 +16,9 @@ public class UIContentFitter : MonoBehaviour
                        childCount *childWidth+
                        hg.padding.left -
                        childWidth;
-        GetComponent<RectTransform>().sizeDelta = new Vector2(width,170);
+
+        Vector2 size = GetComponent<RectTransform>().sizeDelta;
+        GetComponent<RectTransform>().sizeDelta = new Vector2(width,size.y);
         
 
     }
