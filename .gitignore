@@ -11,6 +11,9 @@
 /QCAR/
 /WordNetAPI-master/
 /Standard Assets/
+/Assets/Demigiant/*
+/Assets/Resources/DOTweenSettings.asset
+/Assets/Resources/DOTweenSettings.asset.meta
 # Visual Studio 2015 cache directory
 /.vs/
 
@@ -47,3 +50,8 @@ sysinfo.txt
 
 #custom
 *.csv
+Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll
+
+Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll.meta
+
+Assets/Demigiant.meta
