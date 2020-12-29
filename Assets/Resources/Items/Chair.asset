@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b15c590d509c47f694a7eeda92b3adc, type: 3}
   m_Name: Chair
   m_EditorClassIdentifier: 
-  price: 200
-  itemPrefab: {fileID: 7887528235732700347, guid: 4e9fb2cde7b0d41a7aa4bb92ca613ec9,
+  price: 100
+  itemPrefab: {fileID: 1174516064759710582, guid: 4536e1b6654a0422aaf2d4fa46192e46,
     type: 3}
-  itemImage: {fileID: 21300000, guid: 4ea6f6b4a65f641fba1aad429ba7c20a, type: 3}
+  itemImage: {fileID: 21300000, guid: 73768359f1be3d647a24ac2429febd4f, type: 3}

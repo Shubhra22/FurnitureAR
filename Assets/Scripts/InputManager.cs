@@ -24,6 +24,9 @@ public class InputManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+#if UNITY_EDITOR
+        return;
+#endif
         CrosshairCalculation();
         
         if (Input.touchCount <= 0 || touch.phase != TouchPhase.Began)

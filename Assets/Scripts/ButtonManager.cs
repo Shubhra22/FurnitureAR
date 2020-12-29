@@ -6,31 +6,24 @@ using UnityEngine.UI;
 
 public class ButtonManager : MonoBehaviour
 {
-    private Button btn;
-    [SerializeField]private RawImage buttonImage;
 
+    [SerializeField] private RawImage buttonImage;
+    private Button btn;
     private int _itemId;
     private Sprite _buttonTexture;
     
-    public Sprite ButtonTexture
+    public int ItemId
+    {
+        set => _itemId = value;
+    }
+    public Sprite ButtonTexture 
     {
         set
         {
             _buttonTexture = value;
             buttonImage.texture = _buttonTexture.texture;
-
         }
-        
     }
-
-    public int ItemId
-    {
-        set { _itemId = value; }
-    }
-    
-    
-    
-    // Start is called before the first frame update
     void Start()
     {
         btn = GetComponent<Button>();
@@ -43,17 +36,15 @@ public class ButtonManager : MonoBehaviour
         if (UIManager.Instance.OnEntered(gameObject))
         {
             transform.DOScale(Vector3.one * 2, 0.2f);
-            //transform.localScale = Vector3.one * 2;
         }
         else
         {
             transform.DOScale(Vector3.one, 0.2f);
-            //transform.localScale = Vector3.one;
         }
     }
 
     void SelectObject()
     {
-        DataHandler.Instance.SetFurniture(_itemId);
+        DataHandler.Instance.SetFurinute(_itemId);
     }
 }

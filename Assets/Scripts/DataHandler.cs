@@ -1,16 +1,17 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class DataHandler : MonoBehaviour
 {
     private GameObject furniture;
-
+    
     [SerializeField] private ButtonManager buttonPrefab;
-    [SerializeField] private GameObject buttonContainter;
-    [SerializeField] private List<Item> items;
-
-    private int current_id = 0;
+    [SerializeField] private GameObject buttonContainer;
+    [SerializeField] private List<Item> _items;
+    
+    private int id = 0;
     
     private static DataHandler instance;
     public static DataHandler Instance
@@ -25,37 +26,36 @@ public class DataHandler : MonoBehaviour
         }
         
     }
-
-
+    
     private void Start()
     {
+        _items = new List<Item>();
         LoadItems();
         CreateButtons();
     }
 
     void LoadItems()
     {
-        var items_obj = Resources.LoadAll("Items", typeof(Item));
+        var items_obj =Resources.LoadAll("Items",typeof(Item));
         foreach (var item in items_obj)
         {
-            items.Add(item as Item);
+            _items.Add(item as Item);
         }
     }
-    
     void CreateButtons()
     {
-        foreach (Item i in items)
+        foreach (Item i in _items)
         {
-            ButtonManager b = Instantiate(buttonPrefab, buttonContainter.transform);
-            b.ItemId = current_id;
+            ButtonManager b = Instantiate(buttonPrefab, buttonContainer.transform);
+            b.ItemId = id;
             b.ButtonTexture = i.itemImage;
-            current_id++;
+            id++;
         }
     }
 
-    public void SetFurniture(int id)
+    public void SetFurinute(int id)
     {
-        furniture = items[id].itemPrefab;
+        furniture = _items[id].itemPrefab;
     }
 
     public GameObject GetFurniture()
