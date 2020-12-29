@@ -61,4 +61,9 @@ public class UIManager : MonoBehaviour
         }
         return false;
     }
+
+    public void ScrollToButton(Button b)
+    {
+        
+    }
 }
