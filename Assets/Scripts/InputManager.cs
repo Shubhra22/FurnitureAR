@@ -26,15 +26,14 @@ public class InputManager : MonoBehaviour
     {
         CrosshairCalculation();
         
-        touch = Input.GetTouch(0);
-
-        if (Input.touchCount < 0 || touch.phase != TouchPhase.Began)
+        if (Input.touchCount <= 0 || touch.phase != TouchPhase.Began)
             return;
 
+        touch = Input.GetTouch(0);
 
         if (IsPointerOverUI(touch)) return;
 
-        Instantiate(DataHandler.Instance.furniture, pose.position, pose.rotation);
+        Instantiate(DataHandler.Instance.GetFurniture(), pose.position, pose.rotation);
 
     }
 

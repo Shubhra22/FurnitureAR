@@ -6,8 +6,27 @@ using UnityEngine.UI;
 public class ButtonManager : MonoBehaviour
 {
     private Button btn;
+    [SerializeField]private RawImage buttonImage;
 
-    public GameObject furniture;
+    private int _itemId;
+    private Sprite _buttonTexture;
+    
+    public Sprite ButtonTexture
+    {
+        set
+        {
+            _buttonTexture = value;
+            buttonImage.texture = _buttonTexture.texture;
+
+        }
+        
+    }
+
+    public int ItemId
+    {
+        set { _itemId = value; }
+    }
+    
     
     
     // Start is called before the first frame update
@@ -32,6 +51,6 @@ public class ButtonManager : MonoBehaviour
 
     void SelectObject()
     {
-        DataHandler.Instance.furniture = furniture;
+        DataHandler.Instance.SetFurniture(_itemId);
     }
 }
