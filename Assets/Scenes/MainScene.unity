@@ -896,7 +896,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000076293945, y: 0.0000076293945}
+  m_AnchoredPosition: {x: -0.000034332275, y: 0.0000076293945}
   m_SizeDelta: {x: 0, y: 200}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1411234327
@@ -1028,10 +1028,8 @@ MonoBehaviour:
   buttonPrefab: {fileID: 8765895525809443182, guid: d39a79c157d2a4063aabc291f977f7fb,
     type: 3}
   buttonContainer: {fileID: 1411234325}
-  _items:
-  - {fileID: 11400000, guid: ad85eac2a149943ffb44078ac24ed07f, type: 2}
-  - {fileID: 11400000, guid: bff72abf0dddc394ca3fa89fdc141e0b, type: 2}
-  - {fileID: 11400000, guid: 14d346cf03eeec943b48ccd162a9ea9a, type: 2}
+  _items: []
+  label: Furnitures
 --- !u!4 &1457325658
 Transform:
   m_ObjectHideFlags: 0
