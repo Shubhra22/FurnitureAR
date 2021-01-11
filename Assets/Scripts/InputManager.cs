@@ -29,10 +29,11 @@ public class InputManager : MonoBehaviour
 #endif
         CrosshairCalculation();
         
+        touch = Input.GetTouch(0);
         if (Input.touchCount <= 0 || touch.phase != TouchPhase.Began)
             return;
 
-        touch = Input.GetTouch(0);
+       
 
         if (IsPointerOverUI(touch)) return;
 
