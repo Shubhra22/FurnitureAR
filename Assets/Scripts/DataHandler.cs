@@ -56,6 +56,7 @@ public class DataHandler : MonoBehaviour
             b.ButtonTexture = i.itemImage;
             id++;
         }
+        buttonContainer.GetComponent<UIContentFitter>().Fit();
     }
 
     public void SetFurinute(int id)
