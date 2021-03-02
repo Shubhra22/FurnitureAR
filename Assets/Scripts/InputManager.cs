@@ -50,16 +50,22 @@ public class InputManager : MonoBehaviour
         return results.Count > 0;
     }
 
+    private RaycastHit hit;
     void CrosshairCalculation()
     {
         Vector3 origin = arCam.ViewportToScreenPoint(new Vector3(0.5f, 0.5f, 0));
         Ray ray = arCam.ScreenPointToRay(origin);
-      
+        
         if (_raycastManager.Raycast(ray, _hits))
         {
             pose = _hits[0].pose;
             crosshair.transform.position = pose.position;
             crosshair.transform.eulerAngles = new Vector3(90,0,0);
+        }
+        else if (Physics.Raycast(ray, out hit))
+        {
+            crosshair.transform.position = hit.point;
+            crosshair.transform.up = hit.normal;
         }
     }
     

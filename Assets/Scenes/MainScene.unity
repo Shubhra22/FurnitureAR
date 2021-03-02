@@ -240,7 +240,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 0.2735849, g: 0.2735849, b: 0.2735849, a: 0.27058825}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -872,7 +872,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1411234326}
   - component: {fileID: 1411234327}
-  - component: {fileID: 1411234328}
+  - component: {fileID: 1411234329}
   m_Layer: 5
   m_Name: Content
   m_TagString: Untagged
@@ -896,8 +896,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000034332275, y: 0.0000076293945}
-  m_SizeDelta: {x: 0, y: 200}
+  m_AnchoredPosition: {x: 0.00028325865, y: 0.0000076293945}
+  m_SizeDelta: {x: -1075.4192, y: 200}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1411234327
 MonoBehaviour:
@@ -924,7 +924,7 @@ MonoBehaviour:
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
---- !u!114 &1411234328
+--- !u!114 &1411234329
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -933,11 +933,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1411234325}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Script: {fileID: 11500000, guid: 21ff4be353e2f4d4f9c540de957b6779, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_HorizontalFit: 2
-  m_VerticalFit: 0
 --- !u!1 &1426916183
 GameObject:
   m_ObjectHideFlags: 0
