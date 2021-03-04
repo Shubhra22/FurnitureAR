@@ -7,7 +7,7 @@ using UnityEngine.AddressableAssets;
 
 public class DataHandler : MonoBehaviour
 {
-    private GameObject furniture;
+    [SerializeField]private GameObject furniture;
     
     [SerializeField] private ButtonManager buttonPrefab;
     [SerializeField] private GameObject buttonContainer;
