@@ -14,6 +14,9 @@ An augmented reality app to try furnitures at your home.
       "com.unity.modules.xr": "1.0.0"
 ```
 
+
+# Reference and Inspiration
+
 This app was made using Unity's ARFoundation. The idea of the app came from the IKEA PLACE app (https://play.google.com/store/apps/details?id=com.inter_ikea.place&hl=en_CA)
 
 You will need the following plugins to run the project.
